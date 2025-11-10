@@ -1,0 +1,46 @@
+/* Reseta o navegador */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* Esconde barras de rolagem */
+  background-color: #1a1a1a;
+}
+
+/* --- Estilos da Tela de Início --- */
+#tela-inicio {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+#btn-start {
+  font-size: 1.5em;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* --- Container do Jogo --- */
+#game-container {
+  /* Escondido por padrão, JS vai mostrar */
+  display: none;
+}
+
+/* Não precisamos mais de estilos para 'canvas' aqui! */
+/* O JS (createCanvas) cuida disso. */
